@@ -64,10 +64,9 @@ export class FilmComponent implements OnInit, AfterViewInit {
       this.pageIndex = res.pageIndex;
       this.getData();
     });
-    this.searchForm.get('filmSearchStr')?.valueChanges?.pipe(debounceTime(400), distinctUntilChanged())
-      .subscribe((value) => {
-          this.getData();
-      });
+    this.searchForm.get('filmSearchStr')?.valueChanges?.pipe(debounceTime(400), distinctUntilChanged()).subscribe((value) => {
+        this.getData();
+    });
   }
 }
 export interface Film {

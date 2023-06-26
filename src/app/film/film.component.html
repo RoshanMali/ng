@@ -29,7 +29,7 @@
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
                     <td mat-cell *matCellDef="let element">
                         <div class="font-medium text-lg">
-                            <a [routerLink]="['/film', element.film_id]" class="text-blue-700">#{{ element.film_id }} {{
+                            <a [routerLink]="['/film', element.filmId]" class="text-blue-700">#{{ element.filmId }} {{
                                 element.title }}</a>
                         </div>
                         <div class="font-thin text-sm max-w-lg">
